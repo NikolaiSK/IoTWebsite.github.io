@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav>
+    <a href="html/home.html">Home</a>
+    <a href="html/about.html">About</a>
+    <a href="html/datasheets.html">Datasheets</a>
+    <a href="html/contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner section -->
+  <div class="banner">
+    Temperature Logger System
+  </div>
+
+  <!-- Subtabs -->
+  <div class="subnav">
+    <a href="html/intro.html">Intro</a>
+    <a href="html/method.html">Method</a>
+    <a href="html/results.html">Results</a>
+    <!-- <a href="html/discussion.html">Discussion</a> -->
+    <!-- <a href="html/conclusion.html">Conclusion</a> -->
+  </div>
+
+  <!-- Page content -->
+  <h1 style="text-align:center;">A system for controlling temperature</h1>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    The temperature logger system is a small system that accurately measures temperature in one or multiple rooms.
+    All data is stored both in the cloud and in a local database.
+  </p>
+  
+  <!-- Image under subtabs -->
+  <img src="images/Physical 1.png" alt="System physical" class="content-image">
+
+  <!-- Page content -->
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    The system uses the small computer Raspberry Pi 5 as the main controller to read temperature data from multiple different temperature sensors.
+    The controller uses a PI-regulator to control a heating element to maintain a desired temperature in a room. All the data measured and calculated is stored both in a local database
+    on a local server and sent to a cloud database for remote access.
+  </p>
+  <h1 style="text-align:center;">Start exploring the system by going through this website</h1>
+
+  <footer>
+    <p>Created and designed by Nikolai Nazifi - 30.11.2025</p>
+  </footer>
+</body>
+</html>

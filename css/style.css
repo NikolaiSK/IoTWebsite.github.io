@@ -1,0 +1,162 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat:wght@400;700&display=swap');
+
+/* Main navigation */
+nav {
+  background: #333;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner styling */
+.banner {
+  background-image: url("../images/bannertemp.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Subtab styling */
+.subnav {
+  background: #555;
+  padding: 8px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.subnav a {
+  color: #eee;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.subnav a:hover {
+  text-decoration: underline;
+}
+
+/* Image under subtabs */
+.content-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+/* Small image */
+.content-image-small {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+/* Big image */
+.content-image-big {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-row img {
+  max-width: 200px;   /* small images */
+  border-radius: 8px;
+}
+
+.image-row-big {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-row-big img {
+  max-width: 800px;   /* large images */
+  border-radius: 8px;
+}
+
+
+
+
+/* style.css */
+
+/* General body text */
+body {
+  font-family: 'Open Sans', sans-serif; /* clean readable font */
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif; /* bold modern font */
+}
+
+/* Paragraphs */
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+ul {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 800px;
+  margin:auto;
+}
+/* Paragraphs */
+li {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 800px;
+  margin:auto;
+}
+
+footer {
+  background: #333;              /* dark background */
+  color: #eee;                   /* light text */
+  text-align: center;            /* center the text */
+  padding: 15px;                 /* space around text */
+  margin-top: 40px;              /* space above footer */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;                     /* remove default paragraph spacing */
+}
+
+

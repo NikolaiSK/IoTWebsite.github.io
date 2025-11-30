@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+  <title>Datasheets for the components used in the Temp Logger system</title>
+  <style>
+
+    nav {
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner styling */
+    .banner {
+      background-image: url("../images/bannertemp.jpg"); /* <-- your banner image */
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    font-family: 'Montserrat', sans-serif;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+/* First datasheet container */
+.datasheet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+/* Second datasheet container */
+.datasheet-container-alt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin: 30px;             
+  gap: 20px;                  
+}
+
+/* Shared card styling */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 220px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Default container images */
+.datasheet-container .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Alt container images (smaller) */
+.datasheet-container-alt .card img {
+  width: auto;
+  height: 180px;   /* smaller height */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card a {
+  display: block;
+  margin-top: 8px;
+  color: #1f77b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* style.css */
+
+/* General body text */
+body {
+font-family: 'Open Sans', sans-serif; /* clean readable font */
+margin: 0;
+padding: 0;
+background: #f4f4f4;
+}
+
+/* Headings */
+h1, h2 {
+font-family: 'Montserrat', sans-serif; /* bold modern font */
+}
+
+/* Paragraphs */
+p {
+font-family: 'Open Sans', sans-serif;
+line-height: 1.6;
+}
+  </style>
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="datasheets.html">Datasheets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner section -->
+  <div class="banner">
+    Temperature Logger System - Component Datasheets
+  </div>
+
+  <!-- Image under subtabs -->
+
+  <!-- Page content -->
+  <h1 style="text-align:center;">Componensts used in Temperature Logger System</h1>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Below are the datasheets for the main components used in the Temperature Logger System.
+    Each datasheet provides detailed specifications and information about the respective component.
+  </p>
+
+  <p style="text-align:center;">Click a datasheet below to view details or visit the related website.</p>
+
+  <!-- Datasheet cards -->
+  <div class="datasheet-container">
+    <div class="card">
+      <img src="../images/Pi5.jpg" alt="Raspberry Pi 5">
+      <h2>Raspberry Pi 5</h2>
+      <a href="../documents/raspberry-pi-5-product-brief.pdf">View Datasheet</a>
+      <a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/MCP3002.jpg" alt="MCP3002">
+      <h2>MCP3002</h2>
+      <a href="../documents/MCP3002 datasheet.pdf">View Datasheet</a>
+      <a href="https://www.microchip.com/en-us/product/mcp3002" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/TMP36.jpg" alt="TMP36">
+      <h2>TMP36</h2>
+      <a href="../documents/tmp35_36_37 data.pdf">View Datasheet</a>
+      <a href="https://learn.adafruit.com/tmp36-temperature-sensor/overview" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/NTC.jpg" alt="NTC Thermistor">
+      <h2>NTC Thermistor</h2>
+      <a href="../documents/NTC datasheet.pdf">View Datasheet</a>
+      <a href="https://en.wikipedia.org/wiki/Thermistor" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/TC74.jpg" alt="TC74">
+      <h2>TC74</h2>
+      <a href="../documents/tc74 datasheet.pdf">View Datasheet</a>
+      <a href="https://www.microchip.com/en-us/product/tc74" target="_blank">Visit Website</a>
+    </div>
+  </div>
+
+
+
+<div class="datasheet-container-alt">
+  <div class="card">
+      <img src="../images/PIlogo.png" alt="Raspberry Pi">
+      <h2>Raspberry Pi</h2>
+      <a href="https://www.raspberrypi.com/" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/HIVElogo.svg" alt="HIVE MQTT">
+      <h2>HIVE MQTT</h2>
+      <a href="https://www.hivemq.com/" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/monggoDBlogo.png" alt="MongoDB">
+      <h2>MongoDB</h2>
+      <a href="https://www.mongodb.com/" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/thingspeak.jpg" alt="Thingspeak">
+      <h2>Thingspeak</h2>
+      <a href="https://thingspeak.mathworks.com/" target="_blank">Visit Website</a>
+    </div>
+    <div class="card">
+      <img src="../images/MQTTXlogo.png" alt="MQTTX Client">
+      <h2>MQTTX Client</h2>
+      <a href="https://mqttx.app/" target="_blank">Visit Website</a>
+    </div>
+  </div>
+
+
+
+<footer>
+  <p>Created and designed by Nikolai Nazifi - 30.11.2025</p>
+</footer>
+
+</body>
+</html>

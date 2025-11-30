@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="datasheets.html">Datasheets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner section -->
+  <div class="banner">
+    Temperature Logger System - Results
+  </div>
+
+  <!-- Subtabs -->
+  <div class="subnav">
+    <a href="intro.html">Intro</a>
+    <a href="method.html">Method</a>
+    <a href="results.html">Results</a>
+    <!--<a href="discussion.html">Discussion</a>-->
+    <!--<a href="conclusion.html">Conclusion</a>-->
+  </div>
+
+  <!-- Image under subtabs -->
+  <img src="../images/Physical 2.png" alt="System Diagram" class="content-image-small">
+
+  <!-- Page content -->
+  <h1 style="text-align:center;">Results</h1>
+<p style="font-weight: bold;">In short the system results are as follow:</p>
+<ul style="text-align:left; max-width:800px; margin-bottom: 30px;">
+  <li>The system is able to read analog temperature data from three different sensor, even though the raspberry-pi-5 is only able to read digital signals.
+    This is executed by using the correct hardware and protocol, being able to convert the analog data to a digital signal, the raspberry-pi-5 understands.
+    Then use software calculations to convert the digital raw values, to a readable temperatre measurement. Each method different for each sensor type.</li>
+  <li>Physical buttons are detected and read into the Pi, making it possible to set correct setpoint and acknwoledge alarms without using digital interfaces.</li>
+  <li>The Pi controller connect to local wifi, starts up local program, establish connection to the MQTT broker and both recieves the measurements and are able to send them.
+    The PI controller i running, and produces an output signal for the heating element to control the temperature in the room.</li>
+  </li>
+  <li>The python program located on the server connects to the same MQTT broker and recieves the data in realtime. It is so, processed and sent to both local and cloud databased
+    if connection is established.</li>
+  </li>
+  <li>Local MongoDB database is able to data locally at good data resolution.</li>
+  <li>Cloud database via Thingspeak services is able store data remotely via ThingSpeak MQTT, but data resolution is lower since, data upload is only available every 15 seconds.</li>
+  <li>Datalogger graphical user interface gives a simple overview of the termperature data that is stored in the database. Both raw temperature data and filtered data.
+    It also hosts functionality to export data as CSV files for further analysis and will show statisical data around the raw measurements.</li>
+  </li>
+</ul>
+
+<div class="image-row-big">
+  <img src="../images/Thingspeak1.png" alt="Image 1">
+  <img src="../images/Logger1.png" alt="Image 2">
+</div>
+<footer>
+  <p>Created and designed by Nikolai Nazifi - 30.11.2025</p>
+</footer>
+
+</body>
+</html>

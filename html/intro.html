@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="datasheets.html">Datasheets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner section -->
+  <div class="banner">
+    Temperature Logger System - Introduction
+  </div>
+
+  <!-- Subtabs -->
+  <div class="subnav">
+    <a href="intro.html">Intro</a>
+    <a href="method.html">Method</a>
+    <a href="results.html">Results</a>
+    <!--<a href="discussion.html">Discussion</a>-->
+    <!--<a href="conclusion.html">Conclusion</a>-->
+  </div>
+
+  <!-- Page content -->
+  <h1 style="text-align:center;">Introduction</h1>
+  <p>
+    The temperature logger system is a small system that accurately measures temperature in one or multiple rooms.
+    I uses the Rasp berry Pi 5 as the main controller to read temperature data from multiple different temperature sensors.
+    The controller uses a PI-regulator to control a heating element to maintain a desired temperature in a room. All data is stored both in the cloud and in a local database.
+    But the system contains many different parts that work together to achieve this goal. The system is compatible with multiple different temperature sensors, and uses different communication protocols.
+
+    This introduction will give an overview of the different parts of the system and how they work together to achieve the desired functionality.
+  </p>
+
+    <!-- Image -->
+  <img src="../images/Pi5.jpg" alt="Controller" class="content-image-small">
+
+    <p style="text-align:center; max-width:800px; margin-bottom: 30px;">
+        Picure above shows the main component of the system, the Raspberry Pi 5.
+    </p>
+
+     <p>
+        As mentioned earlier, the system have many working parts. Below is a brief overview of the main components used in the system, 
+        the system sketch provides a visual take on the workings of the system:
+  </p> 
+
+      <!-- Image -->
+  <img src="../images/System Sketch.png" alt="System Diagram" class="content-image-big">
+
+<p style="font-weight: bold;">In short the system has:</p>
+<ul style="text-align:left; max-width:800px; margin-bottom: 30px;">
+  <li>Multiple temperature sensors to measure the temperature in the room(s).</li>
+  <li>Physical button and dials to set desired temperature and control the system.</li>
+  <li>Physical LED indicators to show system status and alarm status.</li>
+  <li>A Raspberry Pi 5 as the main controller using the Thonny IDE to read data from the sensors and control the heating element.</li>
+  <li>Wireless communication to send data to local hardware.</li>
+  <li>Datatransfer and data encryption via MQTT protocol to ensure secure and reliable data transfer.</li>
+  <li>A Python program running on a local server or hardware to receive, process and store data in local and cloud database.</li>
+  <li>Local MongoDB database to store data locally.</li>
+  <li>Cloud database to store data remotely via ThingSpeak cloud services.</li>
+  <li>MQTT client and broker installed on server to handle data transfer between the Raspberry Pi and the local server.</li>
+</ul>
+<footer>
+  <p>Created and designed by Nikolai Nazifi - 30.11.2025</p>
+</footer>
+
+</body>
+</html>
